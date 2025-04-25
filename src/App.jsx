@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import Aleatorios from './componentes/gatosAleatorios'
+import Filtro from './componentes/gatosFiltro'
 import Favoritos from './componentes/gatosFavoritos'
 import Listas from './componentes/gatosLista'
 import Gatos from './componentes/gatos'
+import Gifs from './componentes/gatosGifs'
 import Usuario from './componentes/usuarioGatos'
 import Menu from './componentes/menuGatos' 
 import './App.css'
@@ -18,10 +19,11 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Listas />} />
-        <Route path='/gatosAleatorios' element={<Aleatorios />} />
+        <Route path='/gatosFiltro' element={<Filtro />} />
         <Route path='/gatos' element={<Gatos />} />
         <Route path='/gatosFavoritos' element={<Favoritos />} />
         <Route path='/usuarioGatos' element={<Usuario />} />
+        <Route path='/gatosGifs' element={<Gifs />} />
       </Routes>
     </Router>
   )

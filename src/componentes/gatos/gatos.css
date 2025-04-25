@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.gato-detalle-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.gato-imagen {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gato-info {
+  margin-bottom: 20px;
+}
+
+.gato-raza,
+.gato-raza-id,
+.gato-descripcion,
+.gato-origen,
+.gato-id {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.gato-acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gato-boton-favorito,
+.gato-boton-generar {
+  background-color: #6c5ce7; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gato-boton-favorito:hover,
+.gato-boton-generar:hover {
+  background-color: #4a37a0;
+}
+
+.gato-cargando {
+  font-size: 18px;
+  color: #888;
+}
+
+.gato-error {
+  color: #e74c3c; 
+  font-weight: bold;
+}

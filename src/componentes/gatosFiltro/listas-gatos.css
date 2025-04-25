@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.filtro-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.filtro-titulo {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%; /* Asegura que el título ocupe todo el ancho */
+}
+
+.filtro-razas {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto; 
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+  width: 100%; 
+  justify-content: center; 
+}
+
+.filtro-raza-boton {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  white-space: nowrap; /* Evita que el texto del botón se rompa en varias líneas */
+}
+
+.filtro-raza-boton:hover {
+  background-color: #eee;
+  border-color: #ccc;
+}
+
+.filtro-raza-boton:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 0.2rem rgba(108, 92, 231, 0.25);
+}
+
+.filtro-raza-boton-all {
+  background-color: #6c5ce7;
+  color: white;
+  border-color: #6c5ce7;
+}
+
+.filtro-raza-boton-all:hover {
+  background-color: #4a37a0;
+  border-color: #4a37a0;
+}
+
+.filtro-imagenes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Cuadrícula responsiva para las imágenes */
+  gap: 15px;
+  padding: 20px;
+  width: 90%; /* Ajusta el ancho de la cuadrícula de imágenes */
+}
+
+.filtro-imagen-gato {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filtro-cargando {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #777;
+  width: 100%; /* Asegura que el mensaje de carga ocupe todo el ancho */
+}
+
+.filtro-error {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #e74c3c;
+  font-weight: bold;
+  width: 100%; 
+}

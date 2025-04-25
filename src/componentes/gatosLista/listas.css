@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.lista-container {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.lista-buscador {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.lista-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+    gap: 20px;
+}
+
+.lista-gato-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.lista-gato-item:hover {
+    transform: scale(1.05);
+}
+
+.lista-gato-imagen {
+    width: 100%;
+    height: auto;
+    max-height: 120px; /* Altura máxima para las imágenes */
+    object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+.lista-gato-nombre {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 0;
+}
+
+.lista-cargando {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.lista-error {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #e74c3c;
+    font-weight: bold;
+}
