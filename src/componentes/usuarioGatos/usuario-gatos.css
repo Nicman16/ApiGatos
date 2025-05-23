@@ -1,126 +1,203 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .usuario-gatos-container {
-    font-family: 'Poppins', sans-serif;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .usuario-gatos-titulo {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .usuario-gatos-descripcion {
-    color: #777;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
-  .usuario-gatos-lista-usuarios {
-    width: 80%;
-    margin-bottom: 30px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: #f9f9f9;
-  }
-  
-  .lista-usuarios-titulo {
-    font-size: 1.8em;
-    color: #555;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .lista-usuarios-lista {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-  }
-  
-  .usuario-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    width: 120px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
-  
-  .usuario-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .usuario-item.seleccionado {
-    border-color: #6c5ce7;
-    box-shadow: 0 4px 8px rgba(108, 92, 231, 0.2);
-  }
-  
-  .usuario-foto-perfil {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
-  
-  .usuario-nombre {
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .usuario-gatos-filtro-contenedor {
-    width: 90%;
-    margin-bottom: 30px;
-  }
-  
-  .usuario-seleccionado-info {
-    margin-top: 30px;
-    text-align: center;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    width: 80%;
-  }
-  
-  .usuario-foto-perfil-grande {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  .usuario-gatos-interacciones {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .usuario-gatos-interacciones button {
-    background-color: #6c5ce7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .usuario-gatos-interacciones button:hover {
-    background-color: #4a37a0;
-  }
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.usuario-gatos-container h2 {
+  color: #6c5ce7;
+  margin-bottom: 20px;
+}
+
+.usuario-gatos-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+}
+
+.usuario-gatos-container input[type="text"],
+.usuario-gatos-container input[type="email"],
+.usuario-gatos-container input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.usuario-gatos-container button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.usuario-gatos-container button:hover {
+  background-color: #4a37a0;
+}
+
+.usuario-gatos-container hr {
+  margin: 30px 0 20px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.usuario-gatos-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.usuario-gatos-container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.usuario-gatos-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.usuario-gatos-titulo {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.usuario-gatos-descripcion {
+  color: #777;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.usuario-gatos-lista-usuarios {
+  width: 80%;
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.lista-usuarios-titulo {
+  font-size: 1.8em;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lista-usuarios-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.usuario-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.usuario-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-item.seleccionado {
+  border-color: #6c5ce7;
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.2);
+}
+
+.usuario-foto-perfil {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.usuario-nombre {
+  font-size: 14px;
+  color: #333;
+}
+
+.usuario-gatos-filtro-contenedor {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.usuario-seleccionado-info {
+  margin-top: 30px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 80%;
+}
+
+.usuario-foto-perfil-grande {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.usuario-gatos-interacciones {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.usuario-gatos-interacciones button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.usuario-gatos-interacciones button:hover {
+  background-color: #4a37a0;
+}
