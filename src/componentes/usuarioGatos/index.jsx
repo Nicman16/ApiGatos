@@ -72,4 +72,4 @@ function UsuarioGatos() {
   );
 }
 
-export default Usuario;
+export default usuariosConGatos;
